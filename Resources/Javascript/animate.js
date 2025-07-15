@@ -5,8 +5,6 @@ const revealElements = document.querySelectorAll('.scroll-reveal');
 
     revealElements.forEach(el => {
       const elementTop = el.getBoundingClientRect().top;
-      console.log(triggerBottom);
-      
 
       if (elementTop < triggerBottom) {
         el.classList.add('reveal');
@@ -16,3 +14,8 @@ const revealElements = document.querySelectorAll('.scroll-reveal');
 
   window.addEventListener('scroll', revealOnScroll);
   window.addEventListener('load', revealOnScroll);
+
+
+//scroll when clicked to that specifiction section
+
+ 

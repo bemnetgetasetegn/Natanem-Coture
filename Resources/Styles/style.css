@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -28,6 +28,11 @@ header {
 
 .container {
   margin: 0 40px 0 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .nav {
@@ -128,6 +133,10 @@ header {
     gap: 20px;
   }
 
+  .abt-container .container {
+    margin: none;
+  }
+
   .card {
     padding: 18px;
   }
@@ -162,8 +171,9 @@ header {
   }
 
   .hero h1 {
+    margin-bottom: 18px;
+    padding-bottom: 10px;
     font-size: 26px;
-    margin-bottom: 16px;
   }
 
   .hero p {
@@ -181,6 +191,11 @@ header {
   .hero .btn-secondary {
     font-size: 16px;
     padding: 12px 24px;
+  }
+
+ .img-container {
+    flex: 0 0 250px;
+    max-width: 250px;
   }
 }
 
@@ -288,7 +303,7 @@ header {
 
 .card p {
     color: #6c757d;
-    line-height: 1.6;
+    line-height: 1.4;
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: justify;
@@ -317,7 +332,6 @@ header {
 .image-container {
     padding-top: 30px;
     display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 20px;
     scroll-behavior: smooth;
     overflow-x: auto;

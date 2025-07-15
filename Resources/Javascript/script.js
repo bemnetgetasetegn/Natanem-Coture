@@ -6,6 +6,7 @@ const contactUsBtn = document.querySelector('#contact-us-btn');
 const imgContainer = document.querySelector('.image-container');
 const scrollbtnRight = document.querySelector('#scrollRight');
 const scrollbtnLeft = document.querySelector('#scrollLeft')
+const links = document.querySelectorAll('.nav-links li')
 
 
 // Responsive nav bar toggle
@@ -13,7 +14,16 @@ ham.addEventListener('click', () => {
   navLinks.classList.toggle('show');
   icon.classList.toggle('fa-bars');
   icon.classList.toggle('fa-times');
+
 });
+
+links.forEach(li => {
+  li.addEventListener('click', () => {
+  navLinks.classList.remove('show');
+  icon.classList.add('fa-bars');
+  icon.classList.remove('fa-times');
+  })
+})
 
 // Close nav links when clicking outside
 document.addEventListener('click', (e) => {
